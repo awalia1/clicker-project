@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>clicker</title>
+	
+	<link href="css/app.css" rel="stylesheet">
+	
+</head>
+
+<body>
+
+	<div id="firstBatman">
+
+		<div id="name1"></div>
+		
+		<img id="batman1" src = "https://upload.wikimedia.org/wikipedia/en/7/74/Batman_Detective_Comics_Vol_2_1.png">
+		
+		<p id="counter1">0</p>
+	
+	</div>
+	
+	<div id="secondBatman">
+	
+		<div id="name2"></div>
+		
+		<img id="batman2" src = "https://upload.wikimedia.org/wikipedia/en/7/74/Batman_Detective_Comics_Vol_2_1.png">
+		
+		<p id="counter2">0</p>
+
+	</div>
+	
+	<script src="js/jQuery.js"></script>
+	
+	<script>
+	
+		var count = 0;
+		var count2 = 0
+		
+		$('#batman1').click(function(e) {
+			count += 1;
+			counter1.innerHTML= count;
+		});
+		
+		$('#batman2').click(function(e) {
+			count2 += 1;
+			counter2.innerHTML= count2;
+		});
+		
+		$("#name1").prepend("batman1");
+		$("#name2").prepend("batman2");
+		
+
+		/*
+	// clear the screen for testing
+document.body.innerHTML = '';
+
+var nums = [1,2,3];
+
+// Let's loop over the numbers in our array
+for (var i = 0; i < nums.length; i++) {
+
+    // This is the number we're on...
+    var num = nums[i];
+
+    // We're creating a DOM element for the number
+    var elem = document.createElement('div');
+    elem.textContent = num;
+
+    // ... and when we click, alert the value of `num`
+    elem.addEventListener('click', (function(numCopy) {
+        return function() {
+            alert(numCopy);
+        };
+    })(num));
+
+    document.body.appendChild(elem);
+};
+	*/
+	
+	</script>
+
+<body>
+</html>
